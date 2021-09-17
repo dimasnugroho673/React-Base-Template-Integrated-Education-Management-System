@@ -1,0 +1,190 @@
+// Here you can add other styles
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&display=swap');
+
+* {
+    font-family: 'Quicksand', sans-serif;
+}
+
+// ANIMATE SLIDE IN
+@media (min-width: 768px) {
+    .animate {
+      animation-duration: 0.3s;
+      -webkit-animation-duration: 0.3s;
+      animation-fill-mode: both;
+      -webkit-animation-fill-mode: both;
+    }
+  }
+  
+  @keyframes slideIn {
+    0% {
+      transform: translateY(1rem);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translateY(0rem);
+      opacity: 1;
+    }
+  
+    0% {
+      transform: translateY(1rem);
+      opacity: 0;
+    }
+  }
+  
+  @-webkit-keyframes slideIn {
+    0% {
+      -webkit-transform: transform;
+      -webkit-opacity: 0;
+    }
+  
+    100% {
+      -webkit-transform: translateY(0);
+      -webkit-opacity: 1;
+    }
+  
+    0% {
+      -webkit-transform: translateY(1rem);
+      -webkit-opacity: 0;
+    }
+  }
+  
+  .slideIn {
+    -webkit-animation-name: slideIn;
+    animation-name: slideIn;
+  }
+// END ANIMATE SLIDE IN
+
+// dropdown-menu
+
+.dropdown-header {
+    padding: 15px;
+    border-radius: 10px 10px 0 0;
+}
+
+.dropdown-menu {
+    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.1);
+}
+
+// end dropwdown-menu
+
+.c-header {
+    background-color: #F4F4F4;
+    border: none;
+}
+
+.c-main {
+    background-color: #F4F4F4 !important;
+}
+
+// sidebar mini
+.c-sidebar-nav {
+    background: #303C54 !important;
+}
+
+// sidebar light 
+.c-sidebar-nav {
+    background: white !important;
+}
+
+.c-sidebar-brand {
+    background: white !important;
+}
+
+.card {
+    .card-header {
+        border-radius: 10px 10px 0 0;
+    }
+
+    .card-footer {
+        border-radius: 0 0 10px 10px;
+    }
+    border-radius: 10px;
+    border-color: transparent;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+// show shadow when sidebar not hidden
+.c-sidebar.c-sidebar-dark.c-sidebar-lg-show.c-sidebar-fixed {
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.c-sidebar.c-sidebar-dark.c-sidebar-lg-show.c-sidebar-fixed {
+    .c-sidebar-nav-item, .c-sidebar-nav-dropdown {
+        margin-right: 20px;
+        .c-sidebar-nav-link { 
+            .c-sidebar-nav-icon {
+                color: #6C757D;
+            }
+            color: #6C757D;
+        }
+        .c-active {
+            .c-sidebar-nav-icon {
+                color: #5589F0 !important;
+            }
+            background: rgba(85, 137, 240, .17) !important;
+            color: #5589F0 !important;
+            font-weight: bold;
+            border-radius: 0 40px 40px 0 !important;
+        }
+    }
+}
+
+
+.c-sidebar.c-sidebar-dark.c-sidebar-lg-show.c-sidebar-fixed.c-sidebar-minimized {
+    .c-sidebar-nav-item {
+        .c-active {
+            margin-right: -20px;
+            border-radius: 0 40px 40px 0 !important;
+        }
+    }
+
+    
+}
+
+.c-sidebar-nav {
+    .c-sidebar-nav-item:hover, .c-sidebar-nav-dropdown:hover {
+        border-radius: 0 40px 40px 0 !important;
+        .c-sidebar-nav-link {
+            .c-sidebar-nav-icon {
+                color: #6C757D;
+            }
+            // margin-right: 20px;
+            color: #6C757D;
+            background: rgba(85, 137, 240, .17) !important;
+            border-radius: 0 40px 40px 0 !important;
+        }
+    }
+}
+
+.c-sidebar-nav-dropdown.c-show {
+    .c-sidebar-nav-item {
+        background: none !important;
+    }     
+}
+
+.c-sidebar-nav {
+    .c-sidebar-nav-item:not(:hover), .c-sidebar-nav-dropdown:not(:hover) { 
+        border-radius: 0 40px 40px 0 !important;
+    }
+}
+
+
+.c-sidebar-nav-dropdown {
+    background: none !important;
+    margin-right: 20px;
+}
+
+
+.c-sidebar-minimized {
+    .c-active {
+        margin-right: 5px;
+    }
+}
+
+// .c-sidebar-nav-item:hover {
+//     border-radius: 0 40px 40px 0 !important;
+//     margin-right: 20px;
+//     background: #3A465D !important;
+// }
